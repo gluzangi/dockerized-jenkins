@@ -11,7 +11,6 @@ services:
       - "50000:50000"
     environment: 
       - "JAVA_OPTS=-Xmx1024m"
-      - "JENKINS_OPTS=--prefix=/jenkins"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - jenkins_data:/var/jenkins_home

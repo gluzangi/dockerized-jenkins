@@ -11,6 +11,8 @@ services:
       - "50000:50000"
     environment: 
       - "JAVA_OPTS=-Xmx1024m"
+      - "JAVA_OPTS=-Duser.timezone=America/Toronto"
+
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - jenkins_data:/var/jenkins_home
